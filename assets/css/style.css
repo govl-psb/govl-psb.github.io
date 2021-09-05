@@ -1,0 +1,80 @@
+/*전체*/
+body {background-color: #9aa4a9;}
+.container {margin: 0 50px;}
+
+/*폰트스타일*/
+.tit {font-family: 'Libre Baskerville', serif;}
+.desc {font-family: 'Roboto Mono', monospace;}
+.desck {font-family: 'Noto Sans KR', sans-serif; }
+
+/*레이아웃*/
+#section1 {
+    background-image: url("../img/sec1-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 26vw;
+}
+#section2 {}
+
+/* section1 */
+.section1 {position: relative;}
+.section1 .sns {overflow: hidden; padding-top: 1.4vw;}
+.section1 .sns ul {float: left; padding-left: 5vw; }
+.section1 .sns li {display: inline; padding-right: 50px; position: relative;}
+.section1 .sns li a {color: #fff; font-family: 'Roboto Mono', monospace; font-size: 16px;}
+.section1 .sns li:after {
+    content: '';
+    position: absolute; right: 23px; top: 1px;
+    width: 1px; height: 12px; background-color: #fff;
+}
+.section1 .sns li:last-child::after {display: none;}
+.section1 .sns p { 
+    float: right; padding-right: 5vw; 
+    color: #fff; font-family: 'Roboto Mono', monospace; 
+    font-size: 16px;
+}
+
+.section1 .cont {
+    padding-top: 5vw;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.section1 .cont h2 {font-size: 4.5vw; line-height: 5vw;}
+.section1 .cont p {
+    font-size: 1.3vw; font-weight: 300; padding-top: 1vw;
+}
+.section1 .cont .contact {padding-top: 5vw;}
+.section1 .cont .contact a {
+    font-family: 'Roboto', sans-serif;  
+    font-size: 1.5vw; 
+    color: #fff;
+    padding: 0.3vw 1vw; 
+    border: 1px solid #fff;
+}
+.section1 .cont .contact:hover a {}
+
+/* section2 */
+.section2 {position: relative;}
+.section2 .moon {width: 16vw; z-index: -1; position: absolute; left: 0; top: 0;}
+.section2 .cloud {width: 50vw; position: absolute; right: -50px; top: -20vw;}
+.section2 .cont {padding: 4.6vw 0 4.6vw 5vw; position: relative;}
+.section2 .cont p {font-size: 5vw; line-height: 6.8vw; font-weight: bold; letter-spacing: -0.3vw;}
+.section2 .cont .cloudM {
+    width: 23vw; position: absolute; left: 50%; top: 50%; 
+    transform: translate(-50%, -50%); z-index: 10;
+}
+
+
+/* section3 */
+.section3 {padding: 6.3vw 0;  position: relative; background-color: #999;}
+.section3 h2 {
+    font-size: 4vw; font-weight: 700;
+    text-align: center;
+    padding-bottom: 4vw;
+}
+.section3 .mApple {display: flex; justify-content: center;  align-items: center;}
+.section3 .mApple .main {width: 16vw; z-index: 20;}
+.section3 .mApple .mainProto1 {width: 14vw; position: relative; top: 2vw; right: -4vw;}
+.section3 .mApple .mainProto2 {width: 14vw; position: relative; top: 2vw; left: -4vw;}

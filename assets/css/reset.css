@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*한글 폰트*/
+@font-face {
+    font-family: 'S-CoreDream-3Light'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; 
+}
+
+/* 여백 초기화 */
+body, div, ul, li, dl, dt, dd, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, figcaption {margin: 0; padding: 0;} 
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+
+/* 폰트 초기화*/
+body, input, textarea, select, button, table{font-family: 'NanumBarunGothic', 'Malgun Gothic', '맑은 고딕', AppleSDGothicNeo-Regular, Dotum, '돋움', Sans-serif; color: #222; font-size: 13px; line-height:1.5;}
+
+/* 폰트 스타일 초기화 */
+em, address{font-style: normal;}
+
+/* 제목 태그 초기화*/
+h1, h2, h3, h4, h5, h6 {font-size:13px; font-weight: normal; }
+
+/* 블릿기호 초기화*/
+dl, ul, li, menu {list-style: none;}
+
+/* 테두리 초기화 */
+img, fieldset {border: 0 none;}
+
+/* 반응형 이미지 */
+img {width: 100%; display: block;}
+
+/*버튼 초기화 -Ie7을 위해*/
+button {border: 0; }
+
+/* 이미지 초기화 -Ie10을 위해 */
+img {border: 0 none; }
+
+/* clearfix */
+.clearfix:before, .clearfix:after {
+    content:''; display: block; clear: both
+}
+
+/* 더보기 */
+.more {position: relative; display: inline-block;}
+.more:before, .more:after {
+    content:''; 
+    position:absolute; right: -25px; top: 2px;
+    width: 9px; height: 1px; background: #fff;
+} 
+.more:before {transform: rotate(45deg) translate(-7px, 8px);}
+.more:after {transform: rotate(-45deg) translate(-12px, -3px);}
+.more.black:before, .more.black:after {background: #555;}
+
+/* 스크롤바 */
+body::-webkit-scrollbar {
+    width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #9699BB ;
+}

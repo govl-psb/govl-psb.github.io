@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll"></div>
+    <!-- //scroll -->
+   
+    <nav id="nav">
+        <span>111</span>
+        <h1><a href="#">publisher</a></h1>
+        <span>222</span>
+    </nav>
+    <!-- nav -->
+    
+    <div id="contents">
+        <section id="section1">
+            <div class="container">
+                <div class="sec1">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Homepage</a></li>
+                            <li><a href="#">Tstory</a></li>
+                            <li><a href="#">Codepen</a></li>
+                        </ul>
+                        <a class="mail" href="mailto">the0dyssey@naver.com</a>
+                    </div>
+                    <h1 class="tit">ChunHwan,<br>A Web Publisher.</h1>
+                    <p class="desc">I am a web publisher who is creative and always trying to develop.</p>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2">
+            <div class="sec2">
+                <div class="cont">
+                    <span>As web publisher of</span>
+                    <span>website development,</span>
+                    <span>I want to inspire customers</span>
+                    <span>and assist them in finding</span>
+                    <span>their comfort and</span>
+                    <span>personal style.</span>
+                </div>
+                <div class="s2-cloudM ani1"><img src="assets/img/cloud-medium.png" alt></div>
+                <div class="s2-moon"><img src="assets/img/moon.png" alt></div>
+                <div class="s2-cloud"><img src="assets/img/sec2-cloud-right.png" alt></div>
+            </div>
+        </section>
+        <!-- //section2-->
+
+        <section id="section3">
+section3
+        </section>
+        <!-- //section3-->
+        
+        <section id="section4">
+section4
+        </section>
+        <!-- //section4-->
+        
+        <section id="section5">
+section5
+        </section>
+        <!-- //section5-->
+        
+        <section id="section6">
+section6
+        </section>
+        <!-- //section6-->
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+         //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        
+        $(window).scroll(function () {
+            var wScroll = $(this).scrollTop();
+            $(".scroll ").text(wScroll);
+            
+            if(wScroll <= $("#section2").offset().top - $(window).height()/2 ){
+                $("#section1").addClass("show")
+            }
+            if(wScroll <= $("#section3").offset().top - $(window).height()/2 ){
+                $("#section2").addClass("show")
+            }
+            if(wScroll <= $("#section4").offset().top - $(window).height()/2 ){
+                $("#section3").addClass("show")
+            } 
+            if(wScroll <= $("#section5").offset().top - $(window).height()/2 ){
+                $("#section4").addClass("show")
+            }
+            if(wScroll <= $("#section6").offset().top - $(window).height()/2 ){
+                $("#section5").addClass("show")
+            }
+            
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- corphes.gr/en -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
